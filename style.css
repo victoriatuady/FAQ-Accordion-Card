@@ -30,7 +30,7 @@ body {
   background-image: var(--BGGRADIENT);
   font-family: "Kumbh Sans", sans-serif;
   margin: 2rem;
-  font-size: 12px;
+  font-size: clamp(12px, 3vw, 13px);
   line-height: 1.2rem;
 
   display: flex;
@@ -122,7 +122,7 @@ hr {
   .main {
     display: grid;
     grid-template-columns: 50% 50%;
-    width: 700px;
+    width: clamp(700px, 4vw, 1000px);
     gap: 1rem;
     padding-bottom: 0;
     padding-left: 0;
@@ -135,25 +135,25 @@ hr {
   }
 
   .pattern {
-    max-width: 130%;
-    max-height: 100%;
+    max-width: 150%;
+    height: auto;
     position: absolute;
-    left: -180px;
-    top: -50px;
+    left: -200px;
+    top: -100px;
   }
 
   .image {
-    max-width: 100%;
-    max-height: 100%;
-    left: -50px;
-    top: 45px;
+    max-width: 120%;
+    height: auto;
+    left: -100px;
+    top: 20px;
   }
 
   .box-image {
     display: block;
     max-width: 30%;
     max-height: 100%;
-    top: 120px;
+    top: 150px;
     left: -120px;
     position: absolute;
   }
